@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reizināšanas tabula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Aprēķini!</h1>
+    <p>izvelies smaguma līmeni:</p>
+
+    <div class="levels">
+        <button onclick="startGame(1)">1. Līmenis<br>1–5</button>
+        <button onclick="startGame(2)">2. Līmenis<br>5–10</button>
+        <button onclick="startGame(3)">3. Līmenis<br>10–15</button>
+    </div>
+     <div id="game" class="hidden">
+        <h2 id="levelTitle"></h2>
+
+        <div id="questions"></div>
+
+        <button class="check-btn" onclick="checkAnswers()">
+            Pārbaudīt
+        </button>
+
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
