@@ -52,17 +52,17 @@ function checkAnswers() {
         const emoji = document.getElementById(`emoji${i}`);
 
         if (Number(input.value) === answers[i]) {
-            emoji.innerHTML = "😀";
+            emoji.innerHTML = "✅";
             emoji.className = "correct";
             score++;
         } else {
-            emoji.innerHTML = "😣";
+            emoji.innerHTML = "❌";
             emoji.className = "wrong";
         }
          }
 
     document.getElementById("result").innerHTML =
-        `Правильных ответов: ${score} из ${answers.length}`;
+        `Pareizās atbildes: ${score} no ${answers.length}`;
 }
 
 function random(min, max) {
